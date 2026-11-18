@@ -1,0 +1,142 @@
+body {
+    background-image: url('/hatter.jpg');
+}
+
+main {
+    background-color: white;
+    max-width: 80%;
+    width: 1000px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr;
+    grid-template-areas: "h h h"
+                        "n ar as"
+                        "f f f";
+}
+
+
+
+
+header {
+    grid-area: h;
+    background-image: url('/fejlec.jpg');
+    padding: 30px;
+}
+
+
+nav {
+    grid-area: n;
+
+}
+
+nav ul {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25px;
+
+}
+
+nav ul li {
+    list-style-type: none;
+}
+
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    background-color: #3E88EF;
+    padding: 10px 20px 10px 20px;
+    border-radius: 14px;
+}
+
+
+
+article {
+    grid-area: ar;
+    padding: 20px;
+}
+
+aside {
+    grid-area: as;
+    padding-left: 20px;
+    padding-top: 10px;
+    border-left: 2px black solid;
+}
+
+footer {
+    grid-area: f;
+    text-align: center;
+    background-color: #3E88EF;
+}
+
+
+
+table, tr, td {
+    border: 1px solid #3E88EF;
+    border-collapse: collapse;
+    text-align: center;
+    border-left: none;
+    border-right: none;
+}
+
+
+tr:nth-child(odd){
+    background-color: #37a5d886;
+}
+
+
+
+
+
+
+kep {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+
+
+img {
+    border: 1px solid #7c7b7b;
+    border-radius: 4px;
+    padding: 5px 10px 20px 10px;
+    width: 100px;
+    transform: rotate(20deg);
+    margin: 10px;
+}
+
+
+img:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+
+@media screen and (max-width: 915px){
+    main {
+        grid-template-columns: 1fr;
+    grid-template-areas: "h "
+                        "n "
+                        "ar "
+                        "as"
+                        "f";
+    }
+    
+    nav ul {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+}
+
+    aside {
+        border-left: none;
+    }
+}
+
+
+
+@media screen and (max-width: 705px){
+
+    nav ul {
+    grid-template-columns: 1fr 1fr;
+
+}
+}
