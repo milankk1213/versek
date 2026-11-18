@@ -1,5 +1,5 @@
 body {
-    background-image: url('/hatter.jpg');
+    background-image: url('hatter.jpg');
 }
 
 main {
@@ -19,7 +19,7 @@ main {
 
 header {
     grid-area: h;
-    background-image: url('/fejlec.jpg');
+    background-image: url('fejlec.jpg');
     padding: 30px;
 }
 
